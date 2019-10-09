@@ -1,1 +1,38 @@
-/* No CSS *//*# sourceMappingURL=master.css.map */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Rubik+Mono+One&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #d2d6dc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  body main {
+    width: calc(100vw - 8rem);
+    background: #fdfff7; }
+    body main h1 {
+      text-align: center;
+      font-family: "Rubik Mono One", sans-serif; }
+    body main ol {
+      list-style: none; }
+    body main #pokedex {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      body main #pokedex .card {
+        outline: 3px solid red;
+        max-width: 10rem; }
+/*# sourceMappingURL=master.css.map */

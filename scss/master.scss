@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Rubik+Mono+One&display=swap");
+
+$clr-bg-grey: #d2d6dc;
+$clr-bg-white: #fdfff7;
+
+$clr-black: #50514f;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: $clr-bg-grey;
+  display: flex;
+  justify-content: center;
+  main {
+    width: calc(100vw - 8rem);
+    background: $clr-bg-white;
+    h1 {
+      text-align: center;
+      font-family: "Rubik Mono One", sans-serif;
+    }
+     ol {
+        list-style: none;
+      }
+    #pokedex {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+     
+      .card {
+        outline: 3px solid red;
+        max-width: 10rem;
+      }
+    }
+  }
+}
