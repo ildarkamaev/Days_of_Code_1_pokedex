@@ -3,36 +3,47 @@
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+  box-sizing: border-box; }
 
 body {
   font-family: "Montserrat", sans-serif;
-  background: #d2d6dc;
+  background: #eeeff1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  -ms-flex-pack: center;
+  justify-content: center; }
   body main {
     width: calc(100vw - 8rem);
-    background: #fdfff7; }
+    background: #fdfff7;
+    padding: 0rem 2rem; }
     body main h1 {
       text-align: center;
-      font-family: "Rubik Mono One", sans-serif; }
+      font-family: "Rubik Mono One", sans-serif;
+      padding: 4rem 0rem; }
     body main ol {
       list-style: none; }
     body main #pokedex {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+      display: -ms-grid;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+      grid-gap: 2rem; }
       body main #pokedex .card {
-        outline: 3px solid red;
-        max-width: 10rem; }
-/*# sourceMappingURL=master.css.map */
+        border-radius: .2rem;
+        -webkit-box-shadow: 0 0 3px 0px;
+        box-shadow: 0 0 3px 0px; }
+        body main #pokedex .card .card-title {
+          text-transform: uppercase;
+          padding-left: 1rem; }
+          body main #pokedex .card .card-title h2 {
+            margin: 0; }
+        body main #pokedex .card .card-subtitle {
+          color: #9ea0a3;
+          padding: .5rem 0rem .5rem 1rem; }
+        body main #pokedex .card .card-image {
+          border-top-left-radius: .2rem;
+          border-top-right-radius: .2rem;
+          background: #eeeff1;
+          width: 100%;
+          height: auto; }

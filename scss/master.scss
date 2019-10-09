@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Rubik+Mono+One&display=swap");
 
-$clr-bg-grey: #d2d6dc;
+$clr-bg-grey: #eeeff1;
+$clr-text-grey: #9ea0a3;
 $clr-bg-white: #fdfff7;
 
 $clr-black: #50514f;
@@ -19,21 +20,48 @@ body {
   main {
     width: calc(100vw - 8rem);
     background: $clr-bg-white;
+    padding: 0rem 2rem;
     h1 {
       text-align: center;
       font-family: "Rubik Mono One", sans-serif;
+      padding: 4rem 0rem;
     }
      ol {
         list-style: none;
       }
     #pokedex {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+      grid-gap: 2rem;
+      // align-items: center;
+      // justify-items: center;
      
       .card {
-        outline: 3px solid red;
-        max-width: 10rem;
+        border-radius: .2rem;
+        // outline: 3px solid red;
+        box-shadow: 0 0 3px 0px;
+        
+        // padding: 1rem;
+        .card-title{
+          text-transform: uppercase;
+          h2{
+            margin: 0;
+          }
+          padding-left: 1rem;
+        }
+
+        .card-subtitle{
+          color: $clr-text-grey;
+          padding: .5rem 0rem .5rem 1rem;
+        }
+
+        .card-image{
+          border-top-left-radius: .2rem;
+          border-top-right-radius: .2rem;
+          background: $clr-bg-grey;
+          width: 100%;
+          height: auto;
+        }
       }
     }
   }
