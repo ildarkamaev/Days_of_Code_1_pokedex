@@ -10,8 +10,8 @@ I'm just gonna open up code editor every day, starting today, and try to finish 
 In order to make it more harder for myself I will write readme for every project that explains how I built it, what I learned and what I didnt understand and why I failed miserably.
 
 ## WTF is this?
-My first project is a Pokemon website that fetches first 150 Pokemons from (PokeAPI)[https://pokeapi.co/]. I came up with it thanks to
-watching (Quicks)[https://www.youtube.com/watch?v=T-VQUKeSU1w] Youtube video. The website doesn't do anything more than just display 150 pokemons.
+My first project is a Pokemon website that fetches first 150 Pokemons from [PokeAPI](https://pokeapi.co/). I came up with it thanks to
+watching [Quicks](https://www.youtube.com/watch?v=T-VQUKeSU1w) Youtube video. The website doesn't do anything more than just display 150 pokemons.
 
 ## What was used?
 - ES6 fancy fetch methods, promises and all that async mumbo-jumbo used to fetch data using API's
