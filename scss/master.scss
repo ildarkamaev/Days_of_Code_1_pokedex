@@ -16,7 +16,9 @@ body {
   font-family: "Montserrat", sans-serif;
   background: $clr-bg-grey;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   main {
     width: calc(100vw - 8rem);
     background: $clr-bg-white;
@@ -64,5 +66,8 @@ body {
         }
       }
     }
+  }
+  footer{
+    padding: 2rem 0;
   }
 }
