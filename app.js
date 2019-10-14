@@ -40,18 +40,18 @@ const displayPopUp = pokeman => {
   const image = pokeman.sprites["front_default"];
   const HTMLstring = `
       <div class="popup">
-          <button id="closeBtn" onclick="closePopUp()">Close</button>
-          <li class="card"">
-          <img class="card-image" src="${image}">
-          <p class="card-subtitle">#${pokeman.id}</p>
-          <h2 class="card-title">${pokeman.name}</h2>
-      </li>
-      <p>Height: ${pokeman.height} | Weight: ${pokeman.weight} | Type: ${pokeman.type}</p>
+          <button id="closeBtn" onclick="closePopUp()">X</button>
+          <li class="popup-section">
+            <img class="popup-image" src="${image}">
+            <h2 class="popup-title">${pokeman.id}. ${pokeman.name}</h2>
+            <p class="popup-subtitle">Height: ${pokeman.height} | Weight: ${pokeman.weight} | Type: ${type}</p>
+          </li>
+      
       </div>
       
     `;
   pokedex.innerHTML = HTMLstring + pokedex.innerHTML;
-  console.log(HTMLstring);
+  
 };
 
 const closePopUp = () => {
