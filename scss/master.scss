@@ -57,14 +57,27 @@ body {
           padding: .5rem 0rem .5rem 1rem;
         }
 
+        .img-bg{
+          width: 100%;
+          background: red;
+        }
+
         .card-image{
           border-top-left-radius: .2rem;
           border-top-right-radius: .2rem;
-          background: $clr-bg-grey;
-          width: 100%;
-          height: auto;
+          // background: $clr-bg-grey;
+          // width: 50%;
+          // height: auto;
+          // margin: 0 auto;
         }
       }
+    .popup{
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+    }
     }
   }
   footer{

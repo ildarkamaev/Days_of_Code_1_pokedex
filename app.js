@@ -19,7 +19,9 @@ const displayPokemon = pokemon => {
     .map(
       pokeman =>
         `<li class="card" onclick="selectPokemon(${pokeman.id})">
-            <img class="card-image" src="${pokeman.image}">
+            <div class="img-bg>
+              <img class="card-image" src="${pokeman.image}">
+            </div>
             <p class="card-subtitle">#${pokeman.id}</p>
             <h2 class="card-title">${pokeman.name}</h2>
             
