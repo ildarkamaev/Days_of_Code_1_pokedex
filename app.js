@@ -20,6 +20,7 @@ const fetchPokemon = () => {
   
 };
 
+<<<<<<< HEAD
 const displayPokemon = pokemon => {
   console.log(pokemon);
   const pokemonHTMLstring = pokemon
@@ -29,6 +30,15 @@ const displayPokemon = pokemon => {
             <div class="img-bg>
               <img class="card-image" src="${pokeman.image}">
             </div>
+=======
+const displayPokemon = (pokemon =>{
+    console.log(pokemon);
+    const pokemonHTMLstring = pokemon
+      .map(
+        pokeman =>
+          `<li class="card">
+            <img class="card-image" src="${pokeman.image}">
+>>>>>>> parent of 83fd761... created popup in js
             <p class="card-subtitle">#${pokeman.id}</p>
             <h2 class="card-title">${pokeman.name}</h2>
             <p class="card-subtitle">${pokeman.type}</p>
@@ -36,6 +46,10 @@ const displayPokemon = pokemon => {
       )
       .join("");
     pokedex.innerHTML = pokemonHTMLstring;
+<<<<<<< HEAD
 });
+=======
+})
+>>>>>>> parent of 83fd761... created popup in js
 
 fetchPokemon();
